@@ -14,7 +14,7 @@ class Server
             BufferedReader inFromClient =
                new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
             clientSentence = inFromClient.readLine();
-            System.out.println("Received: " + clientSentence);
+            System.out.println(clientSentence);
          }
       }
 }
